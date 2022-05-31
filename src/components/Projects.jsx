@@ -3,7 +3,7 @@ import Project from './Project';
 
 const Projects = () => {
   const Container = styled.div`
-    border: solid 1px;
+    margin-top: 100px;
   `;
 
   const Wrapper = styled.div`
@@ -19,6 +19,7 @@ const Projects = () => {
   const Heading = styled.h1`
     display: flex;
     justify-content: center;
+    margin-top: 0px;
   `;
 
 
@@ -26,8 +27,6 @@ const Projects = () => {
     <Container >
       <Heading>Projects</Heading>
       <Wrapper>
-        <Project/>
-        <Project/>
         <Project/>
         <Project/>
       </Wrapper>

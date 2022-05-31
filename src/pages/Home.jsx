@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Navbar from '../components/Navbar';
 import First from '../components/First';
 import Projects from '../components/Projects';
+import About from '../components/About';
 
 const Home = () => {
   document.title = 'Home';
@@ -15,6 +16,7 @@ const Home = () => {
       <Navbar/>
       <First/>
       <div id='projects' ><Projects/></div>
+      <div id='about' ><About/></div>
     </Container>
   )
 }

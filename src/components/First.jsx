@@ -7,24 +7,23 @@ const First = () => {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    border: solid 1px;
+    background-image: url("./backgrounds/pexels-fauxels-3183198.jpg");
+    background-repeat: repeat;
+    background-size: cover;
   `;
 
   const Heading = styled.h1`
     font-size: 60px;
-    border: solid 1px;
-
   `;
 
   const Description = styled.h3`
-    border: solid 1px;
     font-size: 25px;
   `;
 
   return (
     <Container>
       <Heading>Tumelo Ceba</Heading>
-      <Description>Full-stack developer</Description>
+      <Description>Full-stack javascript developer</Description>
     </Container>
   )
 }

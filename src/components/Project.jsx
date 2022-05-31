@@ -6,8 +6,9 @@ const Project = () => {
     display: flex;
     width: 30vw;
     margin: 40px 30px 20px 20px;
-    border: solid 1px black;
+    border: solid 2px black;
     flex-direction: column;
+    border-radius: 10px;
 
     @media screen and (max-width: 820px) {
       min-width: 80%;
@@ -37,12 +38,12 @@ const Project = () => {
 
   const LinkItem = styled.div`
     margin: 10px 10px 10px 10px;
+    :hover{
+      color: orange;
+      border-bottom: solid 3px black;
+      cursor: pointer;
+    }
   `;
-
-  /*
-    height: auto;
-    
-  */
 
   const Image = styled.img`
     object-fit: cover;
@@ -52,10 +53,10 @@ const Project = () => {
 
   return (
     <Container>
-      <Name>Project</Name>
+      <Name>Natours</Name>
       <Image src="https://thumbs.dreamstime.com/b/cat-hunts-rat-scottish-straight-closeup-brown-background-246757868.jpg"></Image>
       <Description>
-        SKFJASFKSJDFALSDasilasfjlsfjjfalskfjasklfjalksdfalksdfhalksjfhasjklfKLSADKASDLSDKDJSKLDJASKLFAJSFKLASJFKLASFJASLKFJASKLDFJASLFKJ
+        Website for park that allows customers to book new tours and review tours that they've already taken
       </Description>
       <Links>
         <LinkItem><GitHub/></LinkItem>

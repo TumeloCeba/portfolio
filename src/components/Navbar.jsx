@@ -4,27 +4,37 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const Container = styled.div`
     display: flex;
-    width: 100vw;
+    position: sticky;
+    top: 0;
     justify-content: center;
-    align-items: center;
-    border: solid 1px;
+    height: 30px;
+    background-color: inherit;
+
   `;
+
   const MenuItem = styled.div`
-    margin 15px 30px 20px 30px;
+    padding: 0px 30px 0px 30px;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    :hover{
+      color: orange;
+      border-bottom: solid 3px black;
+    }
   `;
 
   return (
     <Container>
-      <HashLink smooth to="#projects">
+      <HashLink style= {{textDecoration: 'none'}} smooth to='#projects'>
         <MenuItem>Projects</MenuItem>
       </HashLink>
-      <HashLink smooth to="#cv">
+      <HashLink style= {{textDecoration: 'none'}} smooth to='#cv'>
         <MenuItem>CV</MenuItem>
       </HashLink>
-      <HashLink smooth to="#about">
+      <HashLink style= {{textDecoration: 'none'}} smooth to='#about'>
         <MenuItem>About</MenuItem>
       </HashLink>
-      <HashLink smooth to="#contact">
+      <HashLink style= {{textDecoration: 'none'}} smooth to='#contact'>
         <MenuItem>Contact</MenuItem>
       </HashLink>
     </Container>

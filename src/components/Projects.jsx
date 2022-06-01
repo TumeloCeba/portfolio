@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import Project from './Project';
+import {projects} from '../sampleData.js';
 
 const Projects = () => {
   const Container = styled.div`
     margin-top: 100px;
   `;
+
+  console.log(projects);
 
   const Wrapper = styled.div`
     display: flex;
@@ -22,17 +25,15 @@ const Projects = () => {
     margin-top: 0px;
   `;
 
-
   return (
     <Container >
       <Heading>Projects</Heading>
       <Wrapper>
-        <Project/>
-        <Project/>
+        {projects && projects.map((project) => <Project project = {project} key = {project._id}/>)}
       </Wrapper>
     </Container>
     
   )
-}
+};
 
 export default Projects;

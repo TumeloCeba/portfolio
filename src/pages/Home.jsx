@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import First from '../components/First';
 import Projects from '../components/Projects';
 import About from '../components/About';
+import Contact from '../components/Contact';
 
 const Home = () => {
   document.title = 'Home';
@@ -17,6 +18,7 @@ const Home = () => {
       <First/>
       <div id='projects' ><Projects/></div>
       <div id='about' ><About/></div>
+      <div id='contact' ><Contact/></div>
     </Container>
   )
 }

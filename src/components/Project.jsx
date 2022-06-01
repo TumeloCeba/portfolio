@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GitHub,Language } from "@mui/icons-material";
 
-const Project = () => {
+const Project = ({project}) => {
   const Container = styled.div`
     display: flex;
     width: 30vw;
@@ -9,7 +9,6 @@ const Project = () => {
     border: solid 2px black;
     flex-direction: column;
     border-radius: 10px;
-
     @media screen and (max-width: 820px) {
       min-width: 80%;
     }
@@ -27,6 +26,7 @@ const Project = () => {
   const Description = styled.p`
     margin: 5px 10px 5px 10px;
     word-break: break-all;
+    height: 60px;
   `;
 
   const Links = styled.div`
@@ -36,14 +36,19 @@ const Project = () => {
     align-items: center;
   `;
 
-  const LinkItem = styled.div`
+  let LinkItem = styled.a`
     margin: 10px 10px 10px 10px;
+    color: black;
     :hover{
       color: orange;
       border-bottom: solid 3px black;
       cursor: pointer;
     }
   `;
+  
+  LinkItem.defaultProps = {
+    target: '_blank',
+  };
 
   const Image = styled.img`
     object-fit: cover;
@@ -53,14 +58,14 @@ const Project = () => {
 
   return (
     <Container>
-      <Name>Natours</Name>
+      <Name>{project.name}</Name>
       <Image src="https://thumbs.dreamstime.com/b/cat-hunts-rat-scottish-straight-closeup-brown-background-246757868.jpg"></Image>
       <Description>
-        Website for park that allows customers to book new tours and review tours that they've already taken
+        {project.description}
       </Description>
       <Links>
-        <LinkItem><GitHub/></LinkItem>
-        <LinkItem><Language/></LinkItem>
+        <LinkItem href = {project.url} ><GitHub/></LinkItem>
+        <LinkItem href = {project.git} ><Language/></LinkItem>
       </Links>
     </Container>
   );

@@ -9,7 +9,7 @@ const projects = [
   {
     name: 'Spice City',
     _id: 'spicecity',
-    url: 'https://warm-hollows-56160.herokuapp.com/',
+    url: 'https://spicezone.herokuapp.com/',
     git: 'https://github.com/TumeloCeba/e-commerce',
     description: `A small clothing store`
   }

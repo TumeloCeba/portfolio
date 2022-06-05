@@ -1,33 +1,31 @@
 import styled from "styled-components";
-import { Javascript } from "@mui/icons-material";
 
 const About = () => {
   const Container = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin-top: 100px;
-    border-top: solid 2px black;
   `;
 
   const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100%;
-
     @media screen and (max-width: 820px) {
-      flex-direction: column;
       height: auto;
     }
   `;
 
-  const TechnologiesWrapper = styled.div`
-  `;
+  const TechnologiesWrapper = styled.div``;
 
   const Description = styled.p`
   `;
+
   const DescriptionWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     flex: 2;
   `;
@@ -53,7 +51,7 @@ const About = () => {
   const Heading = styled.h1`
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 100px;
   `;
 
   const Heading3 = styled.h3`
@@ -70,15 +68,8 @@ const About = () => {
         <DescriptionWrapper>
           <Heading3>Description</Heading3>
           <Description>
-            skjfldjfldfjksflaksjdfalskfjsfjksad
-            sdlkafjalskjfasfkljsflasjfjsfklaaflasfjaklsjfaskfslkfj
-            sdlfjlfkjaslfjaslkfaslfkasjfalsk adlfjaslfkajsflaskfjaskljfjaslkfslkfj
-            skjfldjfldfjksflaksjdfalskfjsfjksad
-            sdlkafjalskjfasfkljsflasjfjsfklaaflasfjaklsjfaskfslkfj
-            sdlfjlfkjaslfjaslkfaslfkasjfalsk adlfjaslfkajsflaskfjaskljfjaslkfslkfj
-            skjfldjfldfjksflaksjdfalskfjsfjksad
-            sdlkafjalskjfasfkljsflasjfjsfklaaflasfjaklsjfaskfslkfj
-            sdlfjlfkjaslfjaslkfaslfkasjfalsk adlfjaslfkajsflaskfjaskljfjaslkfslkfj
+            Software engineer at MIP Holdings with 3+ years of experience using among other expertise Progress 4GL, JavaScript, and HTML5 to maintain and develop a system that helps clients automate and manage their financial administration needs.
+            I am excited about new opportunities that allow me to leverage my software engineering knowledge to bring innovative solutions. In the long term I have great interest in Cloud Computing and Machine Learning.
           </Description>
         </DescriptionWrapper>
         <Technologies>

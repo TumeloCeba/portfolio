@@ -4,10 +4,10 @@ import {projects} from '../sampleData.js';
 
 const Projects = () => {
   const Container = styled.div`
+    display: flex;
+    flex-direction: column;
     margin-top: 100px;
   `;
-
-  console.log(projects);
 
   const Wrapper = styled.div`
     display: flex;
@@ -22,7 +22,7 @@ const Projects = () => {
   const Heading = styled.h1`
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 80px;
   `;
 
   return (

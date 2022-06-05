@@ -59,13 +59,13 @@ const Project = ({project}) => {
   return (
     <Container>
       <Name>{project.name}</Name>
-      <Image src="https://thumbs.dreamstime.com/b/cat-hunts-rat-scottish-straight-closeup-brown-background-246757868.jpg"></Image>
+      <Image src={project.image}></Image>
       <Description>
         {project.description}
       </Description>
       <Links>
-        <LinkItem href = {project.url} ><GitHub/></LinkItem>
-        <LinkItem href = {project.git} ><Language/></LinkItem>
+        <LinkItem href = {project.git} ><GitHub/></LinkItem>
+        <LinkItem href = {project.url} ><Language/></LinkItem>
       </Links>
     </Container>
   );
